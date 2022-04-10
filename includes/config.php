@@ -1,0 +1,16 @@
+<?php
+
+  $db_conn = mysqli_connect('localhost', 'admin', 'admin1234','sms_project');
+
+  if (!$db_conn) {
+    echo 'Connection Failed';
+    exit;
+  }
+  session_start();
+  // if(empty($_SESSION) || !isset($_SESSION['login']))
+  // {
+  //   session_start();
+  // }
+
+  include('functions.php');
+?>
